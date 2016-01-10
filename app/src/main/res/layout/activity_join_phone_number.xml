@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#D2C33D"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="본인 휴대전화번호를 입력해주세요"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:gravity="left|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lblCountryCode"
+                android:text="+82"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:layout_weight=".25"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edtPhoneNumber"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textSize="13sp"
+                android:text=""
+                android:hint="휴대전화번호를 입력하세요"
+                android:inputType="number"
+                android:layout_weight=".75"
+                android:minHeight="50dp"
+                android:background="#ffffff"
+                android:padding="15dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:gravity="left|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtName"
+                android:gravity="left"
+                android:singleLine="true"
+                android:maxLines="12"
+                android:minHeight="50dp"
+                android:background="#ffffff"
+                android:inputType="textUri"
+                android:padding="15dp"
+                android:layout_weight=".9"
+                android:hint="이름"
+                android:layout_width="0dp"
+                android:maxLength="32"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnOk"
+            android:text="확인"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#797979"
+            android:text="입력하신 전화번호로 4자리의 인증번호를 보내드립니다"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

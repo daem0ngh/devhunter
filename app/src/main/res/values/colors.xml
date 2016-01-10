@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="list_divider">#d5d5d5</color>
+    <color name="list_item_normal">#f8f8f8</color>
+    <color name="list_item_selected">#e9e9e9</color>
+    <color name="list_item_marked">#fff5db</color>
+    <color name="list_item_today">#fbc3bd</color>
+    <color name="list_item_sky">#e2efff</color>
+    <color name="grid_item_divider">#cbcbcb</color>
+    <color name="grid_item_selected">#6aa4ef</color>
+    <color name="misc_grid_item_selected">#13000000</color>
+    <color name="stat_bg_normal">#e3e3e3</color>
+    <color name="stat_bg_focus">#ececbb</color>
+    <color name="guide_bg">#f8f8f8</color>
+
+    <color name="tooltip_bg">#d9000000</color>
+
+    <color name="list_function_item_normal">#efefef</color>
+    <color name="list_function_item_selected">#dbdbdb</color>
+
+    <color name="actionbar_bg">#FF0099CC</color>
+    <color name="statusbar_bg">#FF006080</color>
+
+    <color name="partner_home">#FFEB322D</color>
+    <color name="partner_shop">#FFFFC600</color>
+    <color name="partner_news">#FFFD6B00</color>
+
+    <!-- circlr progress bar -->
+    <color name="progress_gray">#FFD8D8D8</color>
+    <color name="progress_gray_dark">#FF383838</color>
+
+    <color name="partner_swipe_menuitem_red">#ffeb322d</color>
+    <color name="partner_swipe_menuitem_orange">#fffd6b00</color>
+    <color name="partner_swipe_menuitem_yellow">#ffffc600</color>
+
+    <color name="joinTextColor">#007BE0</color>
+    <color name="joinTextErrorColor">#E86557</color>
+    <color name="joinDisableColor">#ABABAB</color>
+
+    <color name="btn_bg_text">#ff5c5e61</color>
+    <color name="btn_bg_text_disable">#ffadadad</color>
+
+    <color name="transparent_source">#FFFFFFFF</color>
+
+    <color name="approved_status_wait">#FFFAE539</color>
+    <color name="approved_status_true">#FF0DA6E0</color>
+    <color name="approved_status_false">#FFF24236</color>
+
+    <color name="button_disable">#ABABAB</color>
+
+    <!--<color name="kidsnotered">#FFEB322D</color>-->
+    <color name="kidsnotered">#FFF44336</color>
+    <!--<color name="kidsnoteblue">#FF0086E3</color>-->
+    <color name="kidsnoteblue">#FF2196F3</color>
+    <color name="kidsnotetextblue">#FF0086E3</color>
+    <color name="red">#FFFF0000</color>
+    <color name="xmas_red">#FFDB2928</color>
+
+    <color name="rollcard_text_status">#FF757575</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="kidsnotebackgroundwhite">#f8f8f8</color>
+
+    <color name="default_entry_bgcolor">#f4f4f4</color>
+    <color name="default_skin_title">#aa0e82cc</color>
+    <color name="winter_skin_title_morning">#aa26afb7</color>
+    <color name="winter_skin_title_night">#aa415b8c</color>
+</resources>
