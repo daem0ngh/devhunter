@@ -1,4 +1,30 @@
 <resources>
     <string name="app_name">DevHunter</string>
     <string name="kakao_app_key">8f40800e7fa6dcbf298b112997ea4d93</string>
+    <string name="tab_tutor">튜터</string>
+    <string name="tab_tutee">튜티</string>
+    <string name="home">홈</string>
+    <string name="etc">기타</string>
+    <string name="addAction">튜티/튜터 추가</string>
+    <string name="setting">설정</string>
+    <string name="myinfo">내 정보</string>
+    <string name="progress_loading">로딩중..</string>
+    <string name="username">성함</string>
+    <string name="birthdate">생년월일</string>
+    <string name="male">남자</string>
+    <string name="female">여자</string>
+    <string name="register_profile">프로필 등록해주세요.</string>
+    <string name="register_tutor">튜터 가입</string>
+    <string name="register_tutee">튜티 가입</string>
+    <string name="email">이메일</string>
+    <string name="location">지역</string>
+    <string name="tech_list">분야</string>
+    <string name="programming">프로그래밍</string>
+    <string name="wish_pay">희망금액</string>
+    <string name="carrior">경력</string>
+    <string name="available_time">수업 가능한 시간</string>
+    <string name="available_time_desc">최대한 상세하게 (ex) 월,화,수 오후 7시 ~ 11:00 )</string>
+    <string name="tutor_description">튜터 세부사항</string>
+    <string name="tech_description">기타 경력사항이나 기술경력에 대한 내용</string>
+    <string name="join_member">가입</string>
 </resources>

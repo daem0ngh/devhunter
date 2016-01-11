@@ -16,7 +16,7 @@ import retrofit.converter.GsonConverter;
 public class ApiManager
 {
 	public static final String HOST = "http://172.28.34.42:8000/";
-	public static final String ENDPOINT = "v1";
+	public static final String ENDPOINT = "verification/";
 
 	public static String[][] mAvailableHostAddrList;
 
@@ -43,7 +43,7 @@ public class ApiManager
 	public static ApiService rebuildAdapter() {
 		if (BuildConfig.DEBUG) {
 			restAdapter = new RestAdapter.Builder()
-					//.setEndpoint(endPointUrl)
+					.setEndpoint(ENDPOINT)
 					.setLogLevel(RestAdapter.LogLevel.BASIC)
 					.setRequestInterceptor(requestInterceptor)
 					.setConverter(new GsonConverter(gson))
@@ -55,7 +55,7 @@ public class ApiManager
 		} else {
 			restAdapter = new RestAdapter.Builder()
 //					.setClient(new OAuthClient())
-					//.setEndpoint(endPointUrl)
+					.setEndpoint(ENDPOINT)
 					.setLogLevel(RestAdapter.LogLevel.NONE)
 					.setRequestInterceptor(requestInterceptor)
 					.setConverter(new GsonConverter(gson))

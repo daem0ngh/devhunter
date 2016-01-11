@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<LinearLayout
+		android:id="@+id/layoutBg"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_margin="10dp"
+		android:gravity="center_vertical"
+		android:background="@drawable/toast_bg" >
+	
+		<ImageView
+			android:id="@+id/imgIcon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="8dp"
+			android:background="@mipmap/toast_popup_ok" />
+	
+		<TextView
+			android:id="@+id/lblMessage"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#ffffff"
+			android:textSize="17sp"
+			android:text="Loading..." />
+	
+	</LinearLayout>
+
+</LinearLayout>

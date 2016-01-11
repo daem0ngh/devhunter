@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3ef" >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_weight="1"
+        android:isScrollContainer="false"
+        android:layout_below="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:weightSum="1"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/titlebar"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="8dp"
+                android:gravity="left"
+                android:textSize="16sp"
+                android:textColor="?attr/colorPrimary"
+                android:text="@string/register_profile" />
+
+            <ImageView android:layout_width="match_parent" android:layout_height="2dip" android:background="#E9E8DC" />
+
+            <LinearLayout
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.tutors.dev.devhunter.imageview.NetworkCustomRoundedImageView
+                    android:id="@+id/imgKidPhoto"
+                    android:src="@mipmap/profile01_adult"
+                    android:scaleType="fitCenter"
+                    android:padding="4dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@mipmap/profile02"/>
+
+                <LinearLayout
+                    android:layout_marginTop="18dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtKidName"
+                        android:background="#FFFFFF"
+                        android:maxLength="50"
+                        android:singleLine="true"
+                        android:hint="@string/username"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutBirthDay"
+                        android:background="#FFFFFF"
+                        android:layout_marginTop="2dp"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/lblBirthday"
+                            android:background="#FFFFFF"
+                            android:hint="@string/birthdate"
+                            android:singleLine="true"
+                            android:paddingLeft="5dp"
+                            android:gravity="center|left"
+                            android:textSize="15dp"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:padding="10dp"
+                            android:src="@mipmap/btn_close"
+                            android:minHeight="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edtEmail"
+                        android:background="#FFFFFF"
+                        android:layout_marginTop="2dp"
+                        android:maxLength="50"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:hint="@string/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutLocation"
+                        android:background="#FFFFFF"
+                        android:layout_marginTop="2dp"
+                        android:padding="5dp"
+                        android:minHeight="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/lblLocation"
+                            android:background="#FFFFFF"
+                            android:hint="@string/location"
+                            android:singleLine="true"
+                            android:paddingLeft="5dp"
+                            android:gravity="center|left"
+                            android:textSize="15dp"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:padding="10dp"
+                            android:src="@mipmap/ic_location_on_black_24dp"
+                            android:minHeight="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <!-- 남 / 여 선택박스 -->
+                    <!--<ToggleButto-->
+                        <!--android:minWidth="1dp"-->
+                        <!--android:minHeight="1dp"-->
+                        <!--android:textOn=""-->
+                        <!--android:textOff=""-->
+                        <!--android:gravity="start"-->
+                        <!--android:background="@drawable/radio_xml"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/layoutMale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical" >
+                            <ToggleButton
+                                android:id="@+id/chkMale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="1dp"
+                                android:minWidth="1dp"
+                                android:textOn=""
+                                android:textOff=""
+                                android:background="@drawable/radio_xml" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:text="@string/male"
+                                android:textColor="#262b31"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutFeMale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical" >
+
+                            <ToggleButton
+                                android:id="@+id/chkFeMale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="1dp"
+                                android:minWidth="1dp"
+                                android:textOn=""
+                                android:textOff=""
+                                android:background="@drawable/radio_xml" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:text="@string/female"
+                                android:textColor="#262b31"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--
+	<com.haarman.supertooltips.ToolTipRelativeLayout
+		android:id="@+id/layoutTooltip"
+    	android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+		-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btnOk"-->
+        <!--android:background="@drawable/button_shape_blue"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:padding="3dp"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:text="@string/add_child_member" />-->
+
+    </LinearLayout>
+
+
+</RelativeLayout>
